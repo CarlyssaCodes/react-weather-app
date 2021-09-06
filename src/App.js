@@ -5,6 +5,7 @@ export default function App() {
   return (
     <div className="App">
       <Weather />
+
       <p>
         The project is{" "}
         <a

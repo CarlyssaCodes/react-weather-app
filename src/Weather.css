@@ -51,8 +51,8 @@
 
 .Weather img {
   padding: 14px;
-  margin: 15px;
-  width: 200px;
+  margin: 0px;
+  width: 150px;
   height: auto;
 }
 
@@ -63,6 +63,6 @@
   background: #e4f1fe;
   border-radius: 4px;
   position: relative;
-  top: 1px;
-  left: 150px;
+  top: -38px;
+  left: 215px;
 }
