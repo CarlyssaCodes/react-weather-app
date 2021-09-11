@@ -13,6 +13,7 @@ export default function Weather(props) {
       ready: true,
       city: response.data.name,
       temperature: response.data.main.temp,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       feelsLike: response.data.main.feels_like,
       humidity: response.data.main.humidity,
@@ -54,7 +55,7 @@ export default function Weather(props) {
                 <input className="btn" type="submit" />
               </form>
               <WeatherInfo data={weatherData} />
-              <WeatherForecast />
+              <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
           </div>
         </div>
